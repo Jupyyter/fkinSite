@@ -27,7 +27,7 @@ html, body {
 
 .bottomSection{
     position: relative; /* Ensure the container is positioned relative for proper sizing */
-  overflow: hidden; /* Hide any overflow of the image */
+    overflow: hidden; /* Hide any overflow of the image */
 
     border: 2px solid red;
     display: flex;
@@ -35,13 +35,12 @@ html, body {
     justify-content: center;
 }
 .swag{
-      /* Replace 'your-image-url' with the URL or path to your image */
-  background-image: url("swag.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
+    background-image: url("swag.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
 .title {
