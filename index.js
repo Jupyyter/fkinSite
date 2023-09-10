@@ -1,0 +1,2 @@
+console.log("MARIOANA EROINA COCAINA CRACK")
+let nr=12

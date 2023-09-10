@@ -41,8 +41,12 @@
 
                 - parallax effect in godot (you need a GPU for this too) <a class="textLinks" href="road.zip" download>here</a>
 
+<<<<<<< HEAD
                 - BAADAPPLE
                 <a class="textLinks" href="BADAPPLE.zip" download>here</a>
+=======
+                - BAADAPPLE <button onclick="downloadMultipleZIPs()">here</button>
+>>>>>>> parent of 209cd96... kj
             </div>
         </div>
         <div class="bottomSection">
@@ -50,6 +54,7 @@
         </div>
         <script src="index.js"></script>
     </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     <script>
@@ -65,6 +70,21 @@
             function downloadFile(index) {
                 if (index >= zipUrls.length) {
                     // All files have been downloaded
+=======
+    <script>
+        function downloadMultipleZIPs() {
+            // create an array of URLs for the ZIP files you want to download
+            var zipUrls = [
+                'badApple.zip',
+                'asciiVideo.zip'
+                // add more file URLs as needed
+            ];
+
+            // function to download files sequentially
+            function downloadFile(index) {
+                if (index >= zipUrls.length) {
+                    // all files have been downloaded
+>>>>>>> parent of 209cd96... kj
                     return;
                 }
 
@@ -73,22 +93,37 @@
                 link.download = zipUrls[index].substring(zipUrls[index].lastIndexOf('/') + 1);
                 link.style.display = 'none';
 
+<<<<<<< HEAD
                 // Trigger the download
+=======
+                // trigger the download
+>>>>>>> parent of 209cd96... kj
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
 
+<<<<<<< HEAD
                 // Download the next file after a brief delay (100ms in this example)
+=======
+                // download the next file after a brief delay (100ms in this example)
+>>>>>>> parent of 209cd96... kj
                 setTimeout(function() {
                     downloadFile(index + 1);
                 }, 100);
             }
 
+<<<<<<< HEAD
             // Start downloading files from the beginning of the array
             downloadFile(0);
         }
     </script>
 >>>>>>> parent of 0d07cb2... zc
+=======
+            // start downloading files from the beginning of the array
+            downloadFile(0);
+        }
+    </script>
+>>>>>>> parent of 209cd96... kj
 </body>
 
 </html>
