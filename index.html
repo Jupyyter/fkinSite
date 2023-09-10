@@ -41,8 +41,7 @@
 
                 - parallax effect in godot (you need a GPU for this too) <a class="textLinks" href="road.zip" download>here</a>
 
-                - BAADAPPLE
-                <a class="textLinks" href="BADAPPLE.zip" download>here</a>
+                - BAADAPPLE <button onclick="downloadMultipleZIPs()">here</button>
             </div>
         </div>
         <div class="bottomSection">
@@ -50,6 +49,42 @@
         </div>
         <script src="index.js"></script>
     </div>
+    <script>
+        function downloadMultipleZIPs() {
+            // Create an array of URLs for the ZIP files you want to download
+            var zipUrls = [
+                'badApple.zip',
+                'asciiVideo.zip'
+                // Add more file URLs as needed
+            ];
+
+            // Function to download files sequentially
+            function downloadFile(index) {
+                if (index >= zipUrls.length) {
+                    // All files have been downloaded
+                    return;
+                }
+
+                var link = document.createElement('a');
+                link.href = zipUrls[index];
+                link.download = zipUrls[index].substring(zipUrls[index].lastIndexOf('/') + 1);
+                link.style.display = 'none';
+
+                // Trigger the download
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                // Download the next file after a brief delay (100ms in this example)
+                setTimeout(function() {
+                    downloadFile(index + 1);
+                }, 100);
+            }
+
+            // Start downloading files from the beginning of the array
+            downloadFile(0);
+        }
+    </script>
 </body>
 
 </html>
