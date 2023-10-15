@@ -14,3 +14,4 @@ float q_rsqrt(float number)
 
   return y;
 }
+
