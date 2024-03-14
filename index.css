@@ -23,7 +23,7 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-rows: auto auto 1fr; /* The third row will take up the remaining space */
+    grid-template-rows: auto auto 1fr; /*the third row will take up the remaining space */
     height: 100%;
 }
 
@@ -57,8 +57,8 @@ html, body {
     word-wrap: break-word;
 }
 .bottomSection{
-    position: relative; /* Ensure the container is positioned relative for proper sizing */
-    overflow: hidden; /* Hide any overflow of the image */
+    position: relative; /*rnsure the container is positioned relative for proper sizing */
+    overflow: hidden; /*hide any overflow of the image */
 
     border: 2px solid rgb(94, 14, 14);
     display: flex;
